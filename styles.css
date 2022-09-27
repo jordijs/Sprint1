@@ -94,3 +94,15 @@ div {
         flex-direction: column;
     }
 }
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    #grey1, .invisible {
+        flex-direction: column;
+    }
+
+    #black2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+}
