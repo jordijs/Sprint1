@@ -1,0 +1,199 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/*
+div {
+    display: flex;
+    flex: auto;
+}
+*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: grey;
+}
+
+
+ul {
+    list-style: none;
+} 
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+#social {
+    align-items: center;
+    display: flex;
+}
+
+#social > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex:auto;
+    align-items: center;
+}
+
+
+li:hover {
+    color:rgb(157, 157, 255);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: grey;
+    flex: 3;
+}
+
+.rose {
+    background-color: rgb(255, 129, 129);
+}
+
+.blue {
+    background-color: rgb(35, 113, 214);
+}
+
+.yellow{
+    background-color: palegoldenrod;
+}
+
+#black1 {
+    flex-direction: column;
+}
+
+
+
+#grey1 {
+    flex-direction: row;
+    margin-bottom:5px;
+}
+
+/*
+#orange1 {
+    margin-top: 5px;
+}
+*/
+
+#logo {
+    flex:1;
+    justify-content: center;
+    padding:0;
+}
+
+#logo >  img {
+    max-width:70%;
+}
+
+#buttons {
+    padding: 0;
+    flex:10;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#social {
+    padding: 0 20px;
+    flex:1;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+#catchwordArea {
+    background: url(header.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+
+#catchwordPhrase {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    color: salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 100%;
+}
+
+
+#shade {
+    background-color: black;
+    opacity: 20%;
+    height: 200px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#grey2 {
+    flex-direction: column;
+    flex: 2;
+}
+
+#lightblue1 {
+    background-color: aqua;
+}
+
+#red1 {
+    background-color: brown;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+
+.invisible {
+    margin: 0px;
+    padding: 0px;
+}
+
+#yellow2, #yellow3 {
+    flex: initial;
+}
+
+/* Tablets */
+@media only screen and (max-width: 1024px) {
+    #black2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    #grey1, .invisible {
+        flex-direction: column;
+    }
+
+    #black2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+}
