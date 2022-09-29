@@ -12,5 +12,5 @@
     echo $textInv;
 
     $text2 = "Aquest és el curs de PHP";
-    echo $text, $text2;
+    echo $text. $text2;
 ?>
