@@ -87,8 +87,30 @@
             echo degree($mark);
             
 
+            /* - Exercici 6
+            Charlie em va mossegar el dit!
+            Charlie et mossegarà el dit exactament el 50% del temps.
+            Escriu La funció isBitten () que retorna TRUE amb un 50% de probabilitat i FALSE en cas contrari.
+            Consell: pot ser que la funció rand () et resulti útil.*/
 
+            function isBitten(){
+                $numRand = rand(0, 100);
+                if ($numRand >=50) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
 
+            echo "<br/><br/><h1>Ex.6: Charlie</h1>";
+           
+            echo "Charlie t'ha mossegat el dit?<br/>";
+            if (isBitten()){
+                echo "Sí! T'ha mossegat!";
+            } else {
+                echo "No t'ha mossegat.";
+            }
+            ;
             
         ?>
     </body>
