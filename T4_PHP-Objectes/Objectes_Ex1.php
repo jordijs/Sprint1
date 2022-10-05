@@ -16,22 +16,35 @@ class Employee{
         $this->income = $income;
     }
 
-    public function print($name, $income){
-        echo $this->name;
+    public function print(){
+        echo $this->name . "<br/>";
         if (($this->income) > 6000) {
-            return "Paga impostos";
+            echo "Paga impostos";
         } else {
-            return "No paga impostos.";
+            echo "No paga impostos.";
         }
+        echo "<br/><br/>";
     }
 
 }
 
 
 $employee1 = new Employee();
+$employee1->initialize("Joan", 4000);
+$employee1->print();
 
-echo $employee1->initialize("Jordi", 1000);
-echo $employee1->initialize();
+$employee2 = new Employee();
+$employee2->initialize("Maria", 6000);
+$employee2->print();
+
+$employee3 = new Employee();
+$employee3->initialize("Carles", 6001);
+$employee3->print();
+
+$employee4 = new Employee();
+$employee4->initialize("Lídia", 10000);
+$employee4->print();
+
 
 
 ?>
