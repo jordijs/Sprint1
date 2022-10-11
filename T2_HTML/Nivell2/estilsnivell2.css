@@ -29,8 +29,15 @@ ul {
     flex: auto;
 }
 
+
+
 #social {
     align-items: center;
+}
+
+
+.fa-solid, .fa-brands {
+    margin-right: 5px;
 }
 
 #social > ul {
@@ -146,6 +153,9 @@ li:hover {
 #articles {
     flex-direction: column;
     flex: 4;
+    border-width: 10px 0px;
+    border-color: white;
+    border-style: solid;
 }
 
 #quote {
@@ -156,13 +166,27 @@ li:hover {
 #sidebar {
     flex-direction: column;
     justify-content: start;
-    flex:1;
+    flex: 1;
     text-align: center;
-    padding:20px;
+    padding: 20px;
+    border-width: 10px 0px 10px 10px;
+    border-color: white;
+    border-style: solid;
 }
 
-#sidebarTitle > h1 {
-    text-align: center;
+
+#sidebarTitle {
+    justify-content: center;
+}
+
+#footer {
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    justify-content: center;
+    border-width: 0px 10px;
+    border-color: rgb(207, 207, 207);
+    border-style: solid;
 }
 
 
@@ -171,9 +195,7 @@ li:hover {
     padding: 0px;
 }
 
-#sidebarTitle, #sidebarText {
-    flex: initial;
-}
+
 
 .articlesRow {
     flex-direction: row;
@@ -265,4 +287,13 @@ li:hover {
         background-color: rgb(146, 215, 255);
         flex-direction: column;
     }
+
+    .articlesRow {
+        flex-direction: column;
+    }
+
+    #social > ul {
+        justify-content: space-evenly;
+        padding: 0px;
+        }
 }
