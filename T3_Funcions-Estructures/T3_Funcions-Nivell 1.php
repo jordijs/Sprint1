@@ -11,7 +11,7 @@
 
             function even($age)
             {
-                if (($age % 2) == 0) {
+                if (!($age % 2)) {
                     return "L'edat $age és parell";
                 } else {
                     return "L'edat $age és senar";
