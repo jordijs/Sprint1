@@ -14,38 +14,46 @@
 
 class PokerDice {
 
+    private $throwValue;
+    private $result;
+
 
     public function throw() {
 
-        $throwValue = rand (0,5);
+        $this->throwValue = rand (0,5);
 
-        return $throwValue;
+        return $this->throwValue;
         //tirar el dau, és a dir, genera un valor 
         //aleatori per a l'objecte a què se li aplica el mètode.
     }
 
-    public function shapeName($throwValue) {
-        $result = "";
+    public function shapeName() {
 
-        switch ($throwValue) {
+        switch ($this->throwValue) {
             case 0:
-                $result = "As";
+                $this->result = "As";
+                break;
             case 1:
-                $result = "K";
+                $this->result = "K";
+                break;
             case 2:
-                $result =b"Q";
+                $this->result = "Q";
+                break;
             case 3:
-                $result = "J";
+                $this->result = "J";
+                break;
             case 4:
-                $result = "7";
+                $this->result = "7";
+                break;
             case 5:
-                $result = "8";
+                $this->result = "8";
+                break;
         }
         
         //que digui quina és la figura que ha sortit en l'última 
         //tirada del dau en qüestió.
 
-        $output = "La figura que ha sortit és " . $result;
+        $output = "La figura que ha sortit és " . $this->result;
 
         return $output;
     }
